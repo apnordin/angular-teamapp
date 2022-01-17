@@ -10,12 +10,18 @@ export class AppComponent {
   title = 'teammapp';
   newMemberName = "";
   members: string[] = [];
+  errorMessage = "";
+
   addMember() {
+    if (!this.newMemberName) {
+      this.errorMessage = "Please enter a name"
+      return
+    }
     this.members.push(this.newMemberName);
-    console.log(this.members);
+    this.newMemberName="";
+    this.errorMessage = "";
   }
   onInput(member: string) {
     this.newMemberName = member;
-    console.log(this.newMemberName);
   }
 }
