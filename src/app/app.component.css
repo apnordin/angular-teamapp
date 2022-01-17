@@ -45,6 +45,7 @@ h1 {
   background-color: darkcyan;
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 .input-container input {
