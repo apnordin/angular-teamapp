@@ -58,5 +58,8 @@ export class AppComponent {
     this.members = [];
     this.numberOfTeams = "";
   }
+console(team: any) {
+  console.log(team)
+}
 
 }

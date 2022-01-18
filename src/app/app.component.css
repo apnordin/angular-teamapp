@@ -66,3 +66,16 @@ li {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
+
+.team-label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card-mini {
+  padding: 0.5rem;
+  border: 0.1rem solid grey;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}

@@ -28,4 +28,16 @@
       {{ errorMessage }}
     </p>
   </div>
+  <div *ngIf="teams.length > 0">
+    <div *ngFor="let team of teams; index as i">
+      <p class="team-label">Team {{ i + 1 }}</p>
+      <div class="ui card-mini">
+        <div *ngFor="let member of team">
+          <p>
+            {{ member }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
